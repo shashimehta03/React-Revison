@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import One from './One';
+import Two from './Two';
+import Three from './Three';
+import Four from './Four';
+import Five from './Five';
+import Six from './Six';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <One/> */}
     <App />
+    {/* <Two/> */}
+    {/* <Three/> */}
+    {/* <Four/> */}
+    {/* <Five/> */}
+    {/* <Six/> */}
+
   </React.StrictMode>
 );
 
