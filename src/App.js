@@ -7,6 +7,7 @@ import Three from './Three';
 import Four from './Four';
 import Five from './Five';
 import Six from './Six';
+import Seven from './Seven';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             <li>
               <Link to='/six'>Six</Link>
             </li>
+            <li>
+              <Link to='/seven'>Seven</Link>
+            </li>
 
         </ul>
     
@@ -43,7 +47,9 @@ function App() {
     <Route path='/three' element={<Three/>}/>
     <Route path='/four' element={<Four/>}/>
     <Route path ='/five' element={<Five/>}/>
-    <Route Path ='/six' element={<six/>}/>
+    <Route path ='/six' element={<six/>}/> // this is not woking as router is implemented here
+    <Route path='/seven' element={<Seven/>}/>
+    
     </Routes>
     
     </div>
