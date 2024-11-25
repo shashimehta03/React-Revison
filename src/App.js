@@ -9,6 +9,7 @@ import Five from './Five';
 import Six from './Six';
 import Seven from './Seven';
 import Eight from './Eight';
+import Use from './Hooksuse';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
             <li>
               <Link to='/eight'>Eight</Link>
             </li>
+            <li>
+              <Link to ='/usehook'>UseEffect</Link>
+            </li>
 
         </ul>
     
@@ -54,6 +58,7 @@ function App() {
     <Route path ='/six' element={<six/>}/> // this is not woking as router is implemented here
     <Route path='/seven' element={<Seven/>}/>
     <Route path='/eight' element={<Eight/>}/>
+    <Route path='/usehook' element={<Use/>}/>
     
     </Routes>
     
