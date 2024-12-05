@@ -14,6 +14,7 @@ import Nine from './Nine';
 import Ten from './Ten';
 import Eleven from './Eleven';
 import Twelve from './Twelve';
+import Thirteen from './Thirteen';
 
 function Project(){
   return (
@@ -66,6 +67,9 @@ function App() {
               <Link to='/twelve'>Twelve</Link>
             </li>
             <li>
+              <Link to='/thirteen'>Thirteen</Link>
+            </li>
+            <li>
               <Link to ='/usehook'>UseEffect</Link>
             </li>
 
@@ -88,6 +92,7 @@ function App() {
     <Route path='/ten' element={<Ten/>}/>
     <Route path ='/eleven' element={<Eleven/>}/>
     <Route path='/twelve' element={<Twelve/>}/>
+    <Route path='/thirteen' element={<Thirteen/>}/>
     
     </Routes>
     
