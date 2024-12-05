@@ -11,6 +11,15 @@ import Seven from './Seven';
 import Eight from './Eight';
 import Use from './Hooksuse';
 import Nine from './Nine';
+import Ten from './Ten';
+import Eleven from './Eleven';
+import Twelve from './Twelve';
+
+function Project(){
+  return (
+    <div className='App'>welcome to my project</div>
+  );
+}
 
 function App() {
   return (
@@ -48,13 +57,24 @@ function App() {
               <Link to='/nine'>Nine</Link>
             </li>
             <li>
+              <Link to='/ten'>Ten</Link>
+            </li>
+            <li>
+              <Link to='/eleven'>Eleven</Link>
+            </li>
+            <li>
+              <Link to='/twelve'>Twelve</Link>
+            </li>
+            <li>
               <Link to ='/usehook'>UseEffect</Link>
             </li>
+
             
 
         </ul>
     
     <Routes>
+    <Route path='/' element={<Project/>}/>
     <Route path='/one' element={<One/>}/>
     <Route path='/two' element={<Two/>}/>
     <Route path='/three' element={<Three/>}/>
@@ -65,6 +85,9 @@ function App() {
     <Route path='/eight' element={<Eight/>}/>
     <Route path='/nine' element={<Nine/>}/>
     <Route path='/usehook' element={<Use/>}/>
+    <Route path='/ten' element={<Ten/>}/>
+    <Route path ='/eleven' element={<Eleven/>}/>
+    <Route path='/twelve' element={<Twelve/>}/>
     
     </Routes>
     
