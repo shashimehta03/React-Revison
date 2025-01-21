@@ -15,6 +15,8 @@ import Ten from './Ten';
 import Eleven from './Eleven';
 import Twelve from './Twelve';
 import Thirteen from './Thirteen';
+import Fourteen from './Fourteen';
+import Usememo from './usememo';
 
 function Project(){
   return (
@@ -70,9 +72,15 @@ function App() {
               <Link to='/thirteen'>Thirteen</Link>
             </li>
             <li>
+              <Link to='/fourteen'>Fourteen</Link>
+            </li>
+            
+            <li>
               <Link to ='/usehook'>UseEffect</Link>
             </li>
-
+            <li>
+              <Link to='/usememo'>Use memo Hook</Link>
+            </li>
             
 
         </ul>
@@ -93,6 +101,8 @@ function App() {
     <Route path ='/eleven' element={<Eleven/>}/>
     <Route path='/twelve' element={<Twelve/>}/>
     <Route path='/thirteen' element={<Thirteen/>}/>
+    <Route path='/fourteen' element={<Fourteen/>}/>
+    <Route path='/usememo' element={<Usememo/>}/>
     
     </Routes>
     
