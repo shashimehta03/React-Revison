@@ -6,7 +6,7 @@ const Usememo = () => {
 
     function expensiveTask(n) {
         console.log("Inside expensive function");
-        for (let i = 0; i < 1000000000; i++) {} // Simulated expensive task
+      //uncomment kr lo ihsko  for (let i = 0; i < 1000000000; i++) {} // Simulated expensive task
         return n * 2;
     }
 

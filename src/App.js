@@ -17,6 +17,7 @@ import Twelve from './Twelve';
 import Thirteen from './Thirteen';
 import Fourteen from './Fourteen';
 import Usememo from './usememo';
+import Usecontext from './usecontext';
 
 function Project(){
   return (
@@ -81,6 +82,9 @@ function App() {
             <li>
               <Link to='/usememo'>Use memo Hook</Link>
             </li>
+            <li>
+              <Link to='/usecontext'>Use Context</Link>
+            </li>
             
 
         </ul>
@@ -103,6 +107,7 @@ function App() {
     <Route path='/thirteen' element={<Thirteen/>}/>
     <Route path='/fourteen' element={<Fourteen/>}/>
     <Route path='/usememo' element={<Usememo/>}/>
+    <Route path='/usecontext' element={<Usecontext/>}/>
     
     </Routes>
     
