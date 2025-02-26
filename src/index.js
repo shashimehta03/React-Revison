@@ -3,24 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import One from './One';
-import Two from './Two';
-import Three from './Three';
-import Four from './Four';
-import Five from './Five';
-import Six from './Six';
+import { Provider } from 'react-redux';
+import Store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <One/> */}
-    <App />
-    {/* <Two/> */}
-    {/* <Three/> */}
-    {/* <Four/> */}
-    {/* <Five/> */}
-    {/* <Six/> */}
-
+    {/*  This is the Provider component that we are using to wrap our App component.
+    This is the component that will provide the store to all the components in our app. */}
+    <Provider store={Store}> 
+       <App />
+    </Provider>
   </React.StrictMode>
 );
 

@@ -18,6 +18,7 @@ import Thirteen from './Thirteen';
 import Fourteen from './Fourteen';
 import Usememo from './usememo';
 import Usecontext from './usecontext';
+import Reduxcom from './redux';
 
 function Project(){
   return (
@@ -85,6 +86,9 @@ function App() {
             <li>
               <Link to='/usecontext'>Use Context</Link>
             </li>
+            <li>
+              <Link to='/Reduxcom'>Redux</Link>
+            </li>
             
 
         </ul>
@@ -108,6 +112,7 @@ function App() {
     <Route path='/fourteen' element={<Fourteen/>}/>
     <Route path='/usememo' element={<Usememo/>}/>
     <Route path='/usecontext' element={<Usecontext/>}/>
+    <Route path='/Reduxcom' element={<Reduxcom/>}/>
     
     </Routes>
     
